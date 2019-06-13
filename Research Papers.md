@@ -42,3 +42,79 @@ ___
 * [Impression Allocation for Combating Fraud in E-commerce Via Deep Reinforcement Learning with Action Norm Penalty (IJCAI 2018)](https://www.ijcai.org/proceedings/2018/0548.pdf)
   * Zhao et al.
 > Conducting fraud transactions has become popular among e-commerce sellers to make their products favorable to the platform and buyers, which decreases the utilization efficiency of buyer impressions and jeopardizes the business environment. Fraud detection techniques are necessary but not enough for the platform since it is impossible to recognize all the fraud transactions. In this paper, we focus on improving the platform’s impression allocation mechanism to maximize its profit and reduce the sellers’ fraudulent behaviors simultaneously. First, we learn a seller behavior model to predict the sellers’ fraudulent behaviors from the real-world data provided by one of the largest ecommerce company in the world. Then, we formulate the platform’s impression allocation problem as a continuous Markov Decision Process (MDP) with unbounded action space. In order to make the action executable in practice and facilitate learning, we propose a novel deep reinforcement learning algorithm DDPG-ANP that introduces an action norm penalty to the reward function. Experimental results show that our algorithm significantly outperforms existing baselines in terms of scalability and solution quality.
+___
+* [Collective Fraud Detection Capturing Inter-Transaction Dependency (KDD 2018)](http://proceedings.mlr.press/v71/cao18a.html)
+  * Cao et al.
+> In e-commerce, different payment transactions have different levels of risk. Risk is generally higher for digital goods, but it also differs based on product and its popularity, the offer type (packaged game, virtual currency to a game or subscription service), storefront and geography. Existing fraud policies and models make decisions independently for each transaction based on transaction attributes, payment velocities, user characteristics, and other relevant information. However, suspicious transactions may still evade detection and hence we propose a novel approach leveraging a graph based perspective to uncover relationships among suspicious transactions, i.e., inter-transaction dependency. Our focus is to detect suspicious transactions by capturing common fraudulent behaviors that would not be considered suspicious when being considered in isolation. In this paper, we present HitFraud that leverages heterogeneous information networks for collective fraud detection by exploring correlated and fast evolving fraudulent behaviors. First, a heterogeneous information network is designed to link entities of interest in the transaction database via different semantics. Then, graph based features are efficiently discovered from the network exploiting the concept of meta-paths, and decisions on frauds are made collectively on test instances. Experiments on real-world payment transaction data from Electronic Arts demonstrate that the prediction performance is efectively boosted by HitFraud where the computation of meta-path based features is largely optimized. Notably, recall can be improved up to 7.93% and F-score 4.62% compared to baselines.
+___
+* [Fraud Detection with Density Estimation Trees (KDD 2018)](http://proceedings.mlr.press/v71/ram18a/ram18a.pdf)
+  * Ram et al.
+> We consider the problem of anomaly detection in finance. An application of interest is
+the detection of first-time fraud where new classes of fraud need to be detected using
+unsupervised learning to augment the existing supervised learning techniques that capture
+known classes of frauds. This domain usually has the following requirements – (i) the
+ability to handle data containing both numerical and categorical features, (ii) very low
+latency real-time detection, and (iii) interpretability.
+We propose the use of a variant of density estimation trees (DETs) (Ram and Gray, 2011) for anomaly detection using distributional properties of the data. We formally present
+a procedure for handling data sets with both categorical and numerical features while
+Ram and Gray (2011) focused mainly on data sets with all numerical features. DETs
+have demonstrably fast prediction times, orders of magnitude faster than other density
+estimators like kernel density estimators. The estimation of the density and the anomalousness score for any new item can be done very efficiently. Beyond the flexibility and efficiency,
+DETs are also quite interpretable. For the task of anomaly detection, DETs can generate a
+set of decision rules that lead to high anomalous-ness scores. We empirically demonstrate
+these capabilities on a publicly available fraud data set.
+___
+
+# 2017
+* [Detection of Money Laundering Groups: Supervised Learning on Small Networks (AAAI 2017)](https://arxiv.org/pdf/1608.00708.pdf)
+  * Savage et al.
+> Money laundering is a major global problem, enabling criminal organisations to hide their ill-gotten
+gains and to finance further operations. Prevention of money laundering is seen as a high priority by
+many governments, however detection of money laundering without prior knowledge of predicate crimes
+remains a significant challenge. Previous detection systems have tended to focus on individuals, considering
+transaction histories and applying anomaly detection to identify suspicious behaviour. However, money
+laundering involves groups of collaborating individuals, and evidence of money laundering may only be
+apparent when the collective behaviour of these groups is considered. In this paper we describe a detection
+system that is capable of analysing group behaviour, using a combination of network analysis and supervised
+learning. This system is designed for real-world application and operates on networks consisting of millions
+of interacting parties. Evaluation of the system using real-world data indicates that suspicious activity is
+successfully detected. Importantly, the system exhibits a low rate of false positives, and is therefore suitable
+for use in a live intelligence environment.
+___
+* [Spectrum-based Deep Neural Networks for Fraud Detection (CIKM 2017)](https://arxiv.org/abs/1706.00891)
+  * Yuan et al.
+> In this paper, we focus on fraud detection on a signed graph with only a small set of labeled training data. We propose a novel framework that combines deep neural networks and spectral graph analysis. In particular, we use the node projection (called as spectral coordinate) in the low dimensional spectral space of the graph's adjacency matrix as input of deep neural networks. Spectral coordinates in the spectral space capture the most useful topology information of the network. Due to the small dimension of spectral coordinates (compared with the dimension of the adjacency matrix derived from a graph), training deep neural networks becomes feasible. We develop and evaluate two neural networks, deep autoencoder and convolutional neural network, in our fraud detection framework. Experimental results on a real signed graph show that our spectrum based deep neural networks are effective in fraud detection.
+___
+* [The Many Faces of Link Fraud (ICDM 2017)](https://arxiv.org/abs/1704.01420)
+  * Shah et al.
+> Most past work on social network link fraud detection tries to separate genuine users from fraudsters, implicitly assuming that there is only one type of fraudulent behavior. But is this assumption true? And, in either case, what are the characteristics of such fraudulent behaviors? In this work, we set up honeypots ("dummy" social network accounts), and buy fake followers (after careful IRB approval). We report the signs of such behaviors including oddities in local network connectivity, account attributes, and similarities and differences across fraud providers. Most valuably, we discover and characterize several types of fraud behaviors. We discuss how to leverage our insights in practice by engineering strongly performing entropy-based features and demonstrating high classification accuracy. Our contributions are (a) instrumentation: we detail our experimental setup and carefully engineered data collection process to scrape Twitter data while respecting API rate-limits, (b) observations on fraud multimodality: we analyze our honeypot fraudster ecosystem and give surprising insights into the multifaceted behaviors of these fraudster types, and (c) features: we propose novel features that give strong (>0.95 precision/recall) discriminative power on ground-truth Twitter data.
+___
+* [Uncovering Unknown Unknowns in Financial Services Big Data by Unsupervised Methodologies: Present and Future trends (KDD 2017)](http://proceedings.mlr.press/v71/shabat18a.html)
+  * Shabat et al.
+> Currently, unknown unknowns in high dimensional big data environments can go unnoticed for a long period of time. The failure to detect anomalies in critical infrastructure data can result in extensive financial, operational, reputational and life threatening consequences. In this paper, we describe algorithms for an automatic and unsupervised anomaly detection that do not necessitate domain expertise, signatures, rules, patterns or semantics understanding of the features. We propose several new methodologies for anomaly detection to protect critical infrastructures, with emphasis on finance, spanning from theory to actionable technology. Although anomalies can originate from several sources, we also show that cyber threat,financial and operational malfunction are converging into a single detection paradigm. Performance comparison between different algorithms (ours and others) is presented as well as examples from real use cases.
+___
+* [PD-FDS: Purchase Density based Online Credit Card Fraud Detection System (KDD 2017)](http://proceedings.mlr.press/v71/ki18a/ki18a.pdf)
+  * Ki et al.
+> Credit card fraud detection is an endless war between fraudsters and payment service
+providers. Indeed, annual global financial loss by credit card frauds has increased. Fraudsters have been organized and systematized, attempting to find weak points of existing
+fraud detection system (FDS). State-of-the-art FDS approaches utilize already existing
+fraud cases, which can result in different FDS by payment service providers. Therefore, a
+new payment service provider may not have room for installing a FDS due to the lack of
+fraudulent cases. Moreover, credit card transactions contain the legitimate owner’s personal
+information, which can be exposed to an honest but curious fraud analyst. In this paper,
+we propose a purchase density based FDS (PD-FDS) that uses three features which are
+not related to personal information. PD-FDS does not require already existing fraudulent
+transactions and also shows low false positive rate (<0.01).
+___
+* [Solving the “False Positives” Problem in Fraud Prediction](https://arxiv.org/abs/1710.07709v1)
+  * Wedge et al.
+> In this paper, we present an automated feature engineering based approach to dramatically reduce false positives in fraud prediction. False positives plague the fraud prediction industry. It is estimated that only 1 in 5 declared as fraud are actually fraud and roughly 1 in every 6 customers have had a valid transaction declined in the past year. To address this problem, we use the Deep Feature Synthesis algorithm to automatically derive behavioral features based on the historical data of the card associated with a transaction. We generate 237 features (>100 behavioral patterns) for each transaction, and use a random forest to learn a classifier. We tested our machine learning model on data from a large multinational bank and compared it to their existing solution. On an unseen data of 1.852 million transactions, we were able to reduce the false positives by 54% and provide a savings of 190K euros. We also assess how to deploy this solution, and whether it necessitates streaming computation for real time scoring. We found that our solution can maintain similar benefits even when historical features are computed once every 7 days.
+___
+* [Transaction Fraud Detection Using GRU-Centered Sandwich-Structured Model](https://arxiv.org/abs/1711.01434v3)
+  * Li et al.
+> Rapid growth of modern technologies such as internet and mobile computing are bringing dramatically increased e-commerce payments, as well as the explosion in transaction fraud. Meanwhile, fraudsters are continually refining their tricks, making rule-based fraud detection systems difficult to handle the ever-changing fraud patterns. Many data mining and artificial intelligence methods have been proposed for identifying small anomalies in large transaction data sets, increasing detecting efficiency to some extent. Nevertheless, there is always a contradiction that most methods are irrelevant to transaction sequence, yet sequence-related methods usually cannot learn information at single-transaction level well. In this paper, a new "within->between->within" sandwich-structured sequence learning architecture has been proposed by stacking an ensemble method, a deep sequential learning method and another top-layer ensemble classifier in proper order. Moreover, attention mechanism has also been introduced in to further improve performance. Models in this structure have been manifested to be very efficient in scenarios like fraud detection, where the information sequence is made up of vectors with complex interconnected features.
+___
+# 2016
+* [A Survey of Credit Card Fraud Detection Techniques: Data and Technique Oriented Perspective](https://arxiv.org/abs/1611.06439v1)
+  * Sorournejad et al. 
+> Credit card plays a very important rule in today's economy. It becomes an unavoidable part of household, business and global activities. Although using credit cards provides enormous benefits when used carefully and responsibly,significant credit and financial damages may be caused by fraudulent activities. Many techniques have been proposed to confront the growth in credit card fraud. However, all of these techniques have the same goal of avoiding the credit card fraud; each one has its own drawbacks, advantages and characteristics. In this paper, after investigating difficulties of credit card fraud detection, we seek to review the state of the art in credit card fraud detection techniques, data sets and evaluation criteria.The advantages and disadvantages of fraud detection methods are enumerated and compared.Furthermore, a classification of mentioned techniques into two main fraud detection approaches, namely, misuses (supervised) and anomaly detection (unsupervised) is presented. Again, a classification of techniques is proposed based on capability to process the numerical and categorical data sets. Different data sets used in literature are then described and grouped into real and synthesized data and the effective and common attributes are extracted for further usage.Moreover, evaluation employed criterions in literature are collected and discussed.Consequently, open issues for credit card fraud detection are explained as guidelines for new researchers.
